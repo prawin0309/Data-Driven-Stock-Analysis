@@ -138,8 +138,8 @@ stock_metrics (
 
 ```bash
 # 1. Clone and enter the project
-git clone https://github.com/<your-username>/Data_Driven_Stock_Analysis.git
-cd Data_Driven_Stock_Analysis
+git clone https://github.com/prawin0309/Data-Driven-Stock-Analysis.git
+cd Data-Driven-Stock-Analysis
 
 # 2. Create and activate a virtual environment
 python -m venv .venv
