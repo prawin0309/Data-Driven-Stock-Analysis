@@ -5,7 +5,7 @@ Target: **~25 minutes**, 4 pages, 11 visuals. Everything below is drag-and-drop;
 ## 0. Regenerate the data (only if the pipeline was re-run)
 
 ```bash
-cd D:\DS_G\Data_Driven_Stock_Analysis
+cd <path-to-repo>/Data-Driven-Stock-Analysis
 python powerbi/export_powerbi_data.py
 ```
 
@@ -78,7 +78,7 @@ Colour the green chart `#2E7D32` and the loss chart `#C62828` — it reads insta
 
 ## 5. Save
 
-Save as `D:\DS_G\Data_Driven_Stock_Analysis\powerbi\stock_dashboard.pbix`, then **File → Export → Export to PDF** and keep the PDF next to it. The PDF is what an evaluator can open without Power BI installed — worth the extra 30 seconds.
+Save as `powerbi/stock_dashboard.pbix` (inside the repo), then **File → Export → Export to PDF** and keep the PDF next to it. The PDF is what an evaluator can open without Power BI installed — worth the extra 30 seconds.
 
 ## Note on the analysis window
 
