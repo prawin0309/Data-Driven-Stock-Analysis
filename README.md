@@ -127,6 +127,42 @@ stock_metrics (
 
 ---
 
+## Project Metadata
+
+| Field | Detail |
+|---|---|
+| **Domain** | Finance / Equity Market Analytics |
+| **Skills demonstrated** | Python · Pandas · NumPy · PyYAML · ETL from semi-structured YAML · scikit-learn (KMeans, LinearRegression) · SQL · Streamlit · Plotly · Power BI |
+| **Technical tags** | `python` `streamlit` `powerbi` `pandas` `finance` `stock-market` `kmeans` `mysql` `plotly` |
+| **Dataset** | `data/yaml_monthly/` — 284 daily YAML files across 14 month folders covering 50 NIFTY-50 symbols, supplied with the project brief. Transformed into 50 per-symbol CSVs and one combined frame by `data_pipeline.py`. |
+
+### Business Use Cases
+
+* Rank the NIFTY-50 universe by yearly return to shortlist candidates for a portfolio.
+* Segment stocks into risk/return buckets so allocation can be matched to mandate.
+* Monitor volatility and market beta to size positions and hedge exposure.
+* Compare sector performance and inter-stock correlation before rebalancing.
+
+### Project Evaluation Metrics
+
+| Component | Metric | Achieved |
+|---|---|---|
+| Return analysis | Yearly return per symbol | Average +32.85%; 45 green / 5 red |
+| Risk analysis | Volatility (std. dev. of daily returns) | ADANIENT highest at 0.454 |
+| Segmentation (KMeans) | Silhouette score | 0.335 at k=4 |
+| Market model | Regression R² across 50 betas | Mean 0.287 |
+
+### Project Deliverables
+
+* `data_pipeline.py` — YAML extraction, 50 per-symbol CSVs, cleaning and SQL load
+* `models.py` — KMeans risk/return segmentation and per-symbol beta regressions
+* `app.py` — Streamlit dashboard covering every required analysis
+* `powerbi/stock_dashboard.pbix` — four-page Power BI dashboard with six DAX measures
+* `reports/figures/*.png` — the required visualisations
+* `README.md` — approach, execution steps and results
+
+---
+
 ## 2. How to Execute the Project
 
 ### Prerequisites
@@ -344,3 +380,21 @@ can be reviewed without Power BI installed.
 
 
 <!-- POWERBI:END -->
+
+---
+
+## Author
+
+**Prawin**
+GitHub: [@prawin0309](https://github.com/prawin0309) · Email: prawin0309@gmail.com
+
+## Demo Video
+
+A recorded walkthrough of the running application is required for submission.
+Add the link here once the recording is uploaded:
+
+`Demo video: <paste LinkedIn / Google Drive link here>`
+
+## License
+
+Released under the MIT License. See [LICENSE](LICENSE) for the full text.
