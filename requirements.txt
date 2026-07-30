@@ -5,3 +5,4 @@ mysql-connector-python>=8.3
 streamlit>=1.36
 plotly>=5.20
 scikit-learn>=1.4
+matplotlib>=3.8

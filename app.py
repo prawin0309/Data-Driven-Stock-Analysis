@@ -70,7 +70,8 @@ def page_market_overview(prices: pd.DataFrame, metrics: pd.DataFrame) -> None:
     row[0].metric("Stocks tracked", summary["total_stocks"])
     row[1].metric("Green stocks", summary["green_stocks"],
                   f"{summary['green_pct']}%")
-    row[2].metric("Red stocks", summary["red_stocks"], f"{summary['red_pct']}%")
+    row[2].metric("Red stocks", summary["red_stocks"],
+                  f"{summary['red_pct']}%", delta_color="inverse")
     row[3].metric("Average close", f"₹{summary['average_price']:,.2f}")
     row[4].metric("Average volume", f"{summary['average_volume']:,.0f}")
 
